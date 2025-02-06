@@ -1,7 +1,7 @@
 # История языка C# 
 Нововведения в разных версиях языка C#.  
 Текст сгенерирован с помощью `DeepSeek`.  
-Подробнее можно прочитать у профильных блогеров ([блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/), [блогер 3](https://pvs-studio.ru/ru/blog/posts/csharp/), [блогер 4](https://metanit.com/sharp/tutorial/23.1.php)).  
+Подробнее можно прочитать у профильных блогеров: [блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/), [блогер 3](https://pvs-studio.ru/ru/blog/posts/csharp/), [блогер 4](https://metanit.com/sharp/tutorial/23.1.php).  
 Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history) и на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp).
 
 ---
