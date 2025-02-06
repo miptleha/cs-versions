@@ -90,7 +90,7 @@
   - **Nullable ссылочные типы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/nullable-references)
   - **Асинхронные потоки (`IAsyncEnumerable`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/iteration-statements#await-foreach)
   - **Индексы и диапазоны**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/member-access-operators#range-operator-)
-  - **Реализация по умолчанию в интерфейсах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-8#default-interface-methods)
+  - **Реализация по умолчанию в интерфейсах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/interface#default-interface-members)
 - **Поддерживаемые версии .NET**: .NET Core 3.0, .NET Standard 2.1.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2019.
 
