@@ -2,7 +2,7 @@
 Нововведения в разных версиях языка C#.  
 Текст сгенерирован с помощью `DeepSeek`.  
 От себя добавил ссылки на блогеров ([блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/)), где они рассматривают нововведения.  
-Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history) и на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp)
+Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history) и на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp).
 
 ---
 
