@@ -1,16 +1,16 @@
-# cs-versions
-Нововведения в разных версиях языка C#
+# История языка C# 
+Нововведения в разных версиях языка C#.  
 Текст сгенерирован с помощью `DeepSeek`.  
-От себя добавил ссылки на блогеров, где они рассматривают нововведения.
+От себя добавил ссылки на блогеров, где они рассматривают нововведения.  
+Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history) и на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp)
 
 ---
 
 ### **C# 1.0 (январь 2002)**
 - **Основные нововведения**:
-  - Базовые функции языка: классы, структуры, интерфейсы, делегаты, события.
-  - Поддержка ООП (наследование, полиморфизм, инкапсуляция).
-  - Управляемый код и сборка мусора.
-- **Ссылки на нововведения**: [Обзор C# 1.0](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history#c-version-10)
+  - Базовые функции языка: [классы](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/types/classes), [структуры](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct), [интерфейсы](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/types/interfaces), [делегаты](https://learn.microsoft.com/ru-ru/dotnet/csharp/delegates-overview), [события](https://learn.microsoft.com/ru-ru/dotnet/csharp/events-overview), [атрибуты](https://learn.microsoft.com/ru-ru/dotnet/csharp/advanced-topics/reflection-and-attributes).
+  - Поддержка ООП (наследование, полиморфизм, инкапсуляция): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/tutorials/oop)
+  - [Управляемый код](https://learn.microsoft.com/ru-ru/dotnet/standard/managed-code) и [сборка мусора](https://learn.microsoft.com/ru-ru/dotnet/standard/garbage-collection).
 - **Поддерживаемые версии .NET**: .NET Framework 1.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio .NET (2002).
 
