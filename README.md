@@ -1,7 +1,7 @@
 # История языка C# 
 Нововведения в разных версиях языка C#.  
 Текст сгенерирован с помощью `DeepSeek`.  
-От себя добавил ссылки на блогеров, где они рассматривают нововведения.  
+От себя добавил ссылки на блогеров ([блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/)), где они рассматривают нововведения.  
 Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history) и на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp)
 
 ---
@@ -88,9 +88,9 @@
 ### **C# 8.0 (сентябрь 2019)**
 - **Основные нововведения**:
   - **Nullable ссылочные типы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/nullable-references)
-  - **Асинхронные потоки (`IAsyncEnumerable`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/iteration-statements#await-foreach)
-  - **Индексы и диапазоны**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/member-access-operators#range-operator-)
-  - **Реализация по умолчанию в интерфейсах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/interface#default-interface-members)
+  - **Асинхронные потоки (`IAsyncEnumerable`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream)
+  - **Индексы и диапазоны**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/tutorials/ranges-indexes)
+  - **Реализация по умолчанию в интерфейсах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)
 - **Поддерживаемые версии .NET**: .NET Core 3.0, .NET Standard 2.1.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2019.
 
