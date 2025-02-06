@@ -1,7 +1,7 @@
 # История языка C# 
 Нововведения в разных версиях языка C#.  
 Текст сгенерирован с помощью `DeepSeek`.  
-От себя добавил ссылки на блогеров ([блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/)), где они рассматривают нововведения.  
+От себя добавил ссылки на блогеров ([блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/), [блогер 3](https://pvs-studio.ru/ru/blog/posts/csharp/), [блогер 4](https://metanit.com/sharp/tutorial/23.1.php)).  
 Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history) и на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp).
 
 ---
@@ -109,9 +109,9 @@
 
 ### **C# 10.0 (ноябрь 2021)**
 - **Основные нововведения**:
-  - **Глобальные using-директивы**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-10#global-using-directives)
-  - **Упрощенное объявление пространств имен**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-10#file-scoped-namespaces)
-  - **Улучшения для записей (Records)**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-10#record-structs)
+  - **Глобальные using-директивы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-global-modifier)
+  - **Упрощенное объявление пространств имен**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/namespace#using-statements-in-file-scoped-namespaces)
+  - **Расширенные шаблоны свойств**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns)
 - **Поддерживаемые версии .NET**: .NET 6.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2022.
 
@@ -129,9 +129,9 @@
 
 ### **C# 12.0 (ноябрь 2023)**
 - **Основные нововведения**:
-  - **Первичные конструкторы**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-12#primary-constructors)
-  - **Улучшения для коллекций**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-12#collection-expressions)
-  - **Асинхронные потоки с отменой**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-12#async-streams-with-cancellation)
+  - **Первичные конструкторы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#primary-constructors)
+  - **Выражения коллекции**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#collection-expressions)
+  - **Параметры лямбда-кода по умолчанию**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#default-lambda-parameters)
 - **Поддерживаемые версии .NET**: .NET 8.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2022 (17.8+).
 
