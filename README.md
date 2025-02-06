@@ -1,7 +1,7 @@
 # История языка C# 
 Нововведения в разных версиях языка C#.  
 Текст сгенерирован с помощью `DeepSeek`.  
-Подробнее можно прочитать у профильных блогеров: [блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/), [блогер 3](https://pvs-studio.ru/ru/blog/posts/csharp/), [блогер 4](https://metanit.com/sharp/tutorial/23.1.php).  
+Подробнее можно прочитать у профильных блогеров: [блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/), [блогер 3](https://pvs-studio.ru/ru/blog/posts/csharp/), [блогер 4](https://metanit.com/sharp/tutorial/23.1.php), [блогер 5](https://endjin.com/what-we-think/editions/dotnet-development).  
 Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history) и на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp).
 
 ---
@@ -119,9 +119,9 @@
 
 ### **C# 11.0 (ноябрь 2022)**
 - **Основные нововведения**:
-  - **Сырые строковые литералы**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-11#raw-string-literals)
-  - **Обобщенные атрибуты**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-11#generic-attributes)
-  - **Улучшения сопоставления с образцом**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-11#pattern-matching-enhancements)
+  - **Новые строки в интерполяциях строк**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#newlines-in-string-interpolations)
+  - **Универсальные атрибуты**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#generic-attributes)
+  - **Улучшения сопоставления с образцом**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/pattern-matching)
 - **Поддерживаемые версии .NET**: .NET 7.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2022 (17.4+).
 
