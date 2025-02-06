@@ -98,10 +98,10 @@
 
 ### **C# 9.0 (ноябрь 2020)**
 - **Основные нововведения**:
-  - **Записи (Records)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-9#record-types)
-  - **Инициализаторы только для чтения (`init`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-9#init-only-setters)
-  - **Выражения `with` для записей**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-9#with-expressions)
-  - **Сопоставление с образцом для логических выражений**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-9#pattern-matching-enhancements)
+  - **Записи (Records)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/record)
+  - **Инициализаторы только для чтения (`init`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
+  - **Выражения `with` для записей**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/with-expression)
+  - **Сопоставление с образцом для логических выражений**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-9.0/patterns3)
 - **Поддерживаемые версии .NET**: .NET 5.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2019 (16.8+).
 
@@ -109,9 +109,9 @@
 
 ### **C# 10.0 (ноябрь 2021)**
 - **Основные нововведения**:
-  - **Глобальные using-директивы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-10#global-using-directives)
-  - **Упрощенное объявление пространств имен**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-10#file-scoped-namespaces)
-  - **Улучшения для записей (Records)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-10#record-structs)
+  - **Глобальные using-директивы**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-10#global-using-directives)
+  - **Упрощенное объявление пространств имен**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-10#file-scoped-namespaces)
+  - **Улучшения для записей (Records)**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-10#record-structs)
 - **Поддерживаемые версии .NET**: .NET 6.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2022.
 
@@ -119,9 +119,9 @@
 
 ### **C# 11.0 (ноябрь 2022)**
 - **Основные нововведения**:
-  - **Сырые строковые литералы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#raw-string-literals)
-  - **Обобщенные атрибуты**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#generic-attributes)
-  - **Улучшения сопоставления с образцом**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#pattern-matching-enhancements)
+  - **Сырые строковые литералы**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-11#raw-string-literals)
+  - **Обобщенные атрибуты**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-11#generic-attributes)
+  - **Улучшения сопоставления с образцом**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-11#pattern-matching-enhancements)
 - **Поддерживаемые версии .NET**: .NET 7.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2022 (17.4+).
 
@@ -129,9 +129,9 @@
 
 ### **C# 12.0 (ноябрь 2023)**
 - **Основные нововведения**:
-  - **Первичные конструкторы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#primary-constructors)
-  - **Улучшения для коллекций**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#collection-expressions)
-  - **Асинхронные потоки с отменой**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#async-streams-with-cancellation)
+  - **Первичные конструкторы**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-12#primary-constructors)
+  - **Улучшения для коллекций**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-12#collection-expressions)
+  - **Асинхронные потоки с отменой**: [обзор](https://learn.microsoft.com/us-en/dotnet/csharp/whats-new/csharp-12#async-streams-with-cancellation)
 - **Поддерживаемые версии .NET**: .NET 8.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2022 (17.8+).
 
