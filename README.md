@@ -14,6 +14,123 @@
 - **Поддерживаемые версии .NET**: .NET Framework 1.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio .NET (2002).
 
+<details>
+  <summary>Пример кода C# 1.0</summary>
+  ```charp
+  using System;
+
+namespace CSharp_1
+{
+    class Program
+    {
+        interface IShape
+        {
+            string Name { get; }
+            double CalcArea();
+            double CalcPerimeter();
+            string Info();
+        }
+
+        class Rectangle : IShape
+        {
+            double _width, _height;
+            public Rectangle(double width, double height)
+            {
+                if (width <= 0 || height <= 0)
+                    throw new ArgumentException("Сторона должна быть больше 0");
+                _width = width;
+                _height = height;
+            }
+            public string Name { get { return "Прямоугольник"; } }
+
+            public double CalcArea()
+            {
+                return _width * _height;
+            }
+
+            public double CalcPerimeter()
+            {
+                return 2 * (_width + _height);
+            }
+
+            public string Info()
+            {
+                return string.Format("ширина: {0:0.##}, высота: {1:0.##}", _width, _height);
+            }
+        }
+
+        class Circle : IShape
+        {
+            double _radius;
+            public Circle(double radius)
+            {
+                _radius = radius;
+            }
+            public string Name { get { return "Круг"; } }
+
+            public double CalcArea()
+            {
+                return Math.PI * _radius * _radius;
+            }
+
+            public double CalcPerimeter()
+            {
+                return 2 * Math.PI * _radius;
+            }
+
+            public string Info()
+            {
+                return string.Format("радиус: {0:0.##}", _radius);
+            }
+        }
+
+        delegate void ShapeEventHandler(string message);
+        class ShapeManager
+        {
+            public event ShapeEventHandler ShapeCreated;
+
+            public void CreateShape(IShape shape)
+            {
+                if (ShapeCreated != null)
+                    ShapeCreated(string.Format("Создана фигура: {0}, {1}, периметр: {2:0.##}, площадь: {3:0.##}", shape.Name, shape.Info(), shape.CalcPerimeter(), shape.CalcArea()));
+            }
+        }
+
+        static void ShowInfo(string message)
+        {
+            Console.WriteLine(message);
+        }
+
+        public static void Main()
+        {
+            try
+            {
+                ShapeManager sm = new ShapeManager();
+                sm.ShapeCreated += new ShapeEventHandler(ShowInfo);
+
+                Rectangle rect = new Rectangle(10, 20);
+                sm.CreateShape(rect);
+
+                Circle circle = new Circle(10.1010);
+                sm.CreateShape(circle);
+
+                Rectangle invalidRect = new Rectangle(-20, -30);
+                sm.CreateShape(invalidRect);
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine("Ошибка: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Неизвестная ошибка: " + ex.ToString());
+            }
+        }
+    }
+}
+```
+</details>
+
 ---
 
 ### **C# 2.0 (ноябрь 2005)**
