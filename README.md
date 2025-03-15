@@ -140,6 +140,7 @@ namespace CSharp_1
 - **Основные нововведения**:
   - **Обобщения (Generics)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/generics/)
   - **Анонимные методы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods)
+  - **Статические классы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)
   - **Итераторы (`yield`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/iterators)
   - **Nullable типы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
   - **Ковариация и контравариация в делегатах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
