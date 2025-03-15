@@ -8,7 +8,7 @@
 
 ### **C# 1.0 (январь 2002)**
 - **Основные нововведения**:
-  - Базовые функции языка: [классы](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/types/classes), [структуры](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct), [интерфейсы](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/types/interfaces), [делегаты](https://learn.microsoft.com/ru-ru/dotnet/csharp/delegates-overview), [события](https://learn.microsoft.com/ru-ru/dotnet/csharp/events-overview), [атрибуты](https://learn.microsoft.com/ru-ru/dotnet/csharp/advanced-topics/reflection-and-attributes)
+  - Базовые функции языка: [классы](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/types/classes), [структуры](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct), [интерфейсы](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/types/interfaces), [делегаты](https://learn.microsoft.com/ru-ru/dotnet/csharp/delegates-overview), [события](https://learn.microsoft.com/ru-ru/dotnet/csharp/events-overview), [атрибуты](https://learn.microsoft.com/ru-ru/dotnet/csharp/advanced-topics/reflection-and-attributes), [исключения](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/exceptions/)
   - Поддержка ООП (наследование, полиморфизм, инкапсуляция): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/tutorials/oop)
   - [Управляемый код](https://learn.microsoft.com/ru-ru/dotnet/standard/managed-code) и [сборка мусора](https://learn.microsoft.com/ru-ru/dotnet/standard/garbage-collection)
 - **Поддерживаемые версии .NET**: .NET Framework 1.0.
