@@ -14,15 +14,12 @@
 - **Поддерживаемые версии .NET**: .NET Framework 1.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio .NET (2002).
 
-<details>
-  <summary>Пример кода C# 1.0</summary>
-  ```charp
-  using System;
+<details>  <summary>Пример кода C# 1.0</summary>
+```csharp
+using System;
 
 namespace CSharp_1
 {
-    class Program
-    {
         interface IShape
         {
             string Name { get; }
@@ -96,6 +93,8 @@ namespace CSharp_1
             }
         }
 
+    class Program
+    {
         static void ShowInfo(string message)
         {
             Console.WriteLine(message);
