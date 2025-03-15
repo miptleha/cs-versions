@@ -15,6 +15,7 @@
 - **Поддерживаемые версии Visual Studio**: Visual Studio .NET (2002).
 
 <details>  <summary>Пример кода C# 1.0</summary>
+
 ```csharp
 using System;
 
