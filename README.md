@@ -14,7 +14,7 @@
 - **Поддерживаемые версии .NET**: .NET Framework 1.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio .NET (2002).
 
-<details>  <summary>Пример кода C# 1.0</summary>
+<details><summary>Пример кода C# 1.0</summary>
 
 ```csharp
 using System;
