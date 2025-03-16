@@ -1,5 +1,5 @@
 # История языка C# 
-Нововведения в разных версиях языка C# (промежуточные версии не рассматриваются).  
+Нововведения в разных версиях языка C#.  
 Текст сгенерирован с помощью `DeepSeek`.  
 Подробнее можно прочитать у профильных блогеров: [блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/), [блогер 3](https://pvs-studio.ru/ru/blog/posts/csharp/), [блогер 4](https://metanit.com/sharp/tutorial/23.1.php), [блогер 5](https://endjin.com/what-we-think/editions/dotnet-development).  
 Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history) и на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp).
@@ -210,6 +210,49 @@ namespace CSharp_2
   - **Инициализаторы объектов и коллекций**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
 - **Поддерживаемые версии .NET**: .NET Framework 3.5.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2008.
+
+<details><summary>Пример кода C# 3.0</summary>
+
+```charp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace CSharp_3
+{
+    class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+
+    static class PersonExtension
+    {
+        public static bool IsAdult(this Person p)
+        {
+            return p.Age >= 18;
+        }
+    }
+
+    class Program
+    {
+        public static void Main()
+        {
+            var list = new List<Person>
+            {
+                new Person { Name = "Alex", Age = 10},
+                new Person { Name = "Ivan", Age = 20},
+                new Person { Name = "Peter", Age = 30}
+            };
+
+            var filtered = list.Where(p => p.IsAdult()).Select(p => new { p.Name });
+            foreach (var p in filtered)
+                Console.WriteLine(p.Name); 
+        }
+    }
+}
+```
+</details>
 
 ---
 
