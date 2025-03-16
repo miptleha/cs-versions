@@ -213,7 +213,7 @@ namespace CSharp_2
 
 <details><summary>Пример кода C# 3.0</summary>
 
-```charp
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
