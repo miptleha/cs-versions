@@ -90,10 +90,12 @@ namespace CSharp_1
         public void CreateShape(IShape shape)
         {
             if (ShapeCreated != null)
+            {
                 ShapeCreated(string.Format(
                     "Создана фигура: {0}, {1}, периметр: {2:0.##}, площадь: {3:0.##}", 
                     shape.Name, shape.Info(), shape.CalcPerimeter(), shape.CalcArea()
                 ));
+            }
         }
     }
 
