@@ -189,7 +189,7 @@ namespace CSharp_2
             List<int?> list = CollectionUtils.CreateList<int?>(1, 2, null, 4, 5);
             CollectionUtils.ForEach(list, delegate (int? i)
             {
-                Console.WriteLine(i * i);
+                Console.WriteLine(i * i ?? default(int));
             }, true);
         }
     }
