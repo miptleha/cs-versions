@@ -1,5 +1,5 @@
 # История языка C# 
-Нововведения в разных версиях языка C#.  
+Нововведения в разных версиях языка C# (промежуточные версии не рассматриваются).  
 Текст сгенерирован с помощью `DeepSeek`.  
 Подробнее можно прочитать у профильных блогеров: [блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/), [блогер 3](https://pvs-studio.ru/ru/blog/posts/csharp/), [блогер 4](https://metanit.com/sharp/tutorial/23.1.php), [блогер 5](https://endjin.com/what-we-think/editions/dotnet-development).  
 Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history) и на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp).
@@ -148,6 +148,54 @@ namespace CSharp_1
   - **Ковариация и контравариация в делегатах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
 - **Поддерживаемые версии .NET**: .NET Framework 2.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2005.
+
+<details><summary>Пример кода C# 2.0</summary>
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+namespace CSharp_2
+{
+    delegate void DoAction<T>(T item);
+
+    static class CollectionUtils
+    {
+        public static List<T> CreateList<T>(params T[] items)
+        {
+            return new List<T>(items);
+        }
+
+        public static IEnumerable<T> Reverse<T>(IEnumerable<T> items)
+        {
+            List<T> buffer = new List<T>(items);
+            for (int i = buffer.Count - 1; i >= 0; i--)
+                yield return buffer[i];
+        }
+
+        public static void ForEach<T>(IEnumerable<T> items, DoAction<T> action, bool reverse)
+        {
+            if (reverse)
+                items = Reverse(items);
+            foreach (T item in items)
+                action(item);
+        }
+    }
+
+    class Program
+    {
+        public static void Main()
+        {
+            List<int?> list = CollectionUtils.CreateList<int?>(1, 2, null, 4, 5);
+            CollectionUtils.ForEach(list, delegate (int? i)
+            {
+                Console.WriteLine(i * i);
+            }, true);
+        }
+    }
+}
+```
+</details>
 
 ---
 
