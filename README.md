@@ -267,6 +267,43 @@ namespace CSharp_3
 - **Поддерживаемые версии .NET**: .NET Framework 4.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2010.
 
+<details><summary>Пример кода C# 4</summary>
+
+```csharp
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        class Bot
+        {
+            public void Hello(string prefix = "") { Console.WriteLine(prefix + "Hello"); }
+            public void Bye(string prefix = "") { Console.WriteLine(prefix + "Bye"); }
+        }
+
+        static void Main(string[] args)
+        {
+            var bots = new Bot[5];
+            for (int i = 0; i < bots.Length; i++)
+                bots[i] = new Bot();
+            Parallel.For(0, bots.Length, i => Print(bots[i], num: i, delay: 100));
+        }
+
+        static void Print(dynamic obj, int num, int delay = 10)
+        {
+            obj.Hello("Bot " + num + " say: ");
+            Thread.Sleep(delay);
+            obj.Bye("Bot " + num + " say: ");
+        }
+
+    }
+}
+```
+</details>
+
 ---
 
 ### **C# 5.0 (август 2012)**
