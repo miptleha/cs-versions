@@ -313,6 +313,51 @@ namespace ConsoleApp13
 - **Поддерживаемые версии .NET**: .NET Framework 4.5.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2012.
 
+<details><summary>Пример кода C# 5</summary>
+
+```csharp
+using System;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+
+public enum LogLevel { Debug, Info, Warning, Error }
+
+public static class Logger
+{
+    public static void Log(
+        string message,
+        LogLevel level = LogLevel.Info,
+        [CallerMemberName] string callerName = "",
+        [CallerFilePath] string callerFilePath = "",
+        [CallerLineNumber] int callerLineNumber = 0)
+    {
+        string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+        string fileName = System.IO.Path.GetFileName(callerFilePath);
+        string levelStr = level.ToString().ToUpper();
+
+        Console.WriteLine($"[{timestamp}] [{levelStr}] [{callerName}() in {fileName}:{callerLineNumber}] {message}");
+    }
+}
+
+public static class ConsoleApplication
+{
+    public static void Main()
+    {
+        // Использование:
+        Logger.Log("Начало программы", LogLevel.Debug);
+        MethodAsync().GetAwaiter().GetResult();
+    }
+
+    private static async Task MethodAsync()
+    {
+        Logger.Log(">MethodAsync");
+        await Task.Delay(100);
+        Logger.Log("<MethodAsync");
+    }
+}
+```
+</details>
+
 ---
 
 ### **C# 6.0 (июль 2015)**
