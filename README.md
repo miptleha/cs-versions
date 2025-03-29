@@ -371,6 +371,58 @@ public static class ConsoleApplication
 - **Поддерживаемые версии .NET**: .NET Framework 4.6, .NET Core 1.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2015.
 
+<details><summary>Пример кода C# 6</summary>
+
+```csharp
+using System;
+using static System.Console;
+
+public class Person
+{
+    public string Name { get; } = "Anonymous";
+    public int Age { get; set; } = 18;
+
+    public Person(string name) => Name = name;
+
+    public override string ToString() => $"Name: {Name}, Age: {Age}";
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        try
+        {
+            var person = new Person("Alice");
+            person.Age = -1;
+            WriteLine(person);        // "Name: Alice, Age: -1"
+
+            // Проверка nameof (используется для безопасного получения имени переменной)
+            ValidatePerson(person);
+        }
+        catch (Exception ex) when (ex.Message.Contains("Age")) // Фильтр исключений
+        {
+            WriteLine($"Проблема с возрастом: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            WriteLine($"Ошибка: {ex.Message}");
+        }
+    }
+
+    // Метод с использованием nameof для валидации
+    public static void ValidatePerson(Person person)
+    {
+        if (person == null)
+            throw new ArgumentNullException(nameof(person)); // Безопасное имя параметра
+
+        if (person.Age < 0)
+            throw new ArgumentException("Age cannot be negative", nameof(person.Age));
+    }
+}
+```
+</details>
+
 ---
 
 ### **C# 7.0 (март 2017)**
