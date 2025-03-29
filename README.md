@@ -267,7 +267,7 @@ namespace CSharp_3
 - **Поддерживаемые версии .NET**: .NET Framework 4.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2010.
 
-<details><summary>Пример кода C# 4</summary>
+<details><summary>Пример кода C# 4.0</summary>
 
 ```csharp
 using System;
@@ -313,7 +313,7 @@ namespace ConsoleApp13
 - **Поддерживаемые версии .NET**: .NET Framework 4.5.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2012.
 
-<details><summary>Пример кода C# 5</summary>
+<details><summary>Пример кода C# 5.0</summary>
 
 ```csharp
 using System;
@@ -371,7 +371,7 @@ public static class ConsoleApplication
 - **Поддерживаемые версии .NET**: .NET Framework 4.6, .NET Core 1.0.
 - **Поддерживаемые версии Visual Studio**: Visual Studio 2015.
 
-<details><summary>Пример кода C# 6</summary>
+<details><summary>Пример кода C# 6.0</summary>
 
 ```csharp
 using System;
