@@ -437,6 +437,18 @@ public class Program
 
 ---
 
+### **C# 7.1 (август 2017)**
+- **Основные нововведения**:
+  - **Асинхронный Main**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-1#асинхронный-метод-main)
+  - **Сопоставление с образцом (`pattern matching`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns)
+  - **Локальные функции**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/local-functions)
+  - **`ref` возвращаемые значения и локальные переменные**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/ref#reference-return-values)
+  - **Упрощенное объявление `out` переменных**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)
+- **Поддерживаемые версии .NET**: .NET Framework 4.7, .NET Core 2.0.
+- **Поддерживаемые версии Visual Studio**: Visual Studio 2017.
+
+---
+
 ### **C# 8.0 (сентябрь 2019)**
 - **Основные нововведения**:
   - **Nullable ссылочные типы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/nullable-references)
