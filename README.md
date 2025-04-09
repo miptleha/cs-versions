@@ -17,7 +17,7 @@
   - Поддержка ООП (наследование, полиморфизм, инкапсуляция): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/tutorials/oop)
   - [Управляемый код](https://learn.microsoft.com/ru-ru/dotnet/standard/managed-code) и [сборка мусора](https://learn.microsoft.com/ru-ru/dotnet/standard/garbage-collection)
 - **Версия .NET**: .NET Framework 1.0.
-- **Версия Visual Studio**: Visual Studio .NET (2002).
+- **Версия Visual Studio**: Visual Studio .NET 2002.
 
 <details><summary>Пример кода C# 1.0</summary>
 
@@ -148,7 +148,7 @@ namespace CSharp_1
   - `foreach` вызывает `Dispose`
   - Исправления и оптимизация
 - **Версия .NET**: .NET Framework 1.1.
-- **Версия Visual Studio**: Visual Studio .NET (2003).
+- **Версия Visual Studio**: Visual Studio .NET 2003.
 
 <details><summary>Пример кода C# 1.2</summary>
 
