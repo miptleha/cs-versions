@@ -414,7 +414,6 @@ public static class ConsoleApplication
 {
     public static void Main()
     {
-        // Использование:
         Logger.Log("Начало программы", LogLevel.Debug);
         MethodAsync().GetAwaiter().GetResult();
     }
