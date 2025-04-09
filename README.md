@@ -16,8 +16,8 @@
   - Базовые функции языка: [классы](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/types/classes), [структуры](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct), [интерфейсы](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/types/interfaces), [делегаты](https://learn.microsoft.com/ru-ru/dotnet/csharp/delegates-overview), [события](https://learn.microsoft.com/ru-ru/dotnet/csharp/events-overview), [атрибуты](https://learn.microsoft.com/ru-ru/dotnet/csharp/advanced-topics/reflection-and-attributes), [исключения](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/exceptions/), [пространства имен](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/types/namespaces)
   - Поддержка ООП (наследование, полиморфизм, инкапсуляция): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/tutorials/oop)
   - [Управляемый код](https://learn.microsoft.com/ru-ru/dotnet/standard/managed-code) и [сборка мусора](https://learn.microsoft.com/ru-ru/dotnet/standard/garbage-collection)
-- **Поддерживаемые версии .NET**: .NET Framework 1.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio .NET (2002).
+- **Версия .NET**: .NET Framework 1.0.
+- **Версия Visual Studio**: Visual Studio .NET (2002).
 
 <details><summary>Пример кода C# 1.0</summary>
 
@@ -143,6 +143,75 @@ namespace CSharp_1
 
 ---
 
+### **C# 1.2 (апрель 2003)**
+- **Основные нововведения**:
+  - `foreach` вызывает `Dispose`
+  - Исправления и оптимизация
+- **Версия .NET**: .NET Framework 1.1.
+- **Версия Visual Studio**: Visual Studio .NET (2003).
+
+<details><summary>Пример кода C# 1.2</summary>
+
+```csharp
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+class Range : IEnumerable, IEnumerator, IDisposable
+{
+    int[] _data;
+    int _pos = -1;
+
+    public Range(int start, int end)
+    {
+        if (end < start)
+            throw new Exception("Invalid range");
+        _data = new int[end - start];
+        for (int i = 0; i < end - start; i++)
+            _data[i] = i + start;
+    }
+    public object Current { get { return _data[_pos]; } }
+
+    public void Dispose()
+    {
+        Console.WriteLine("Dispose"); //not called in c# 1.0
+    }
+
+    public IEnumerator GetEnumerator()
+    {
+        this.Reset();
+        return this;
+    }
+
+    public bool MoveNext()
+    {
+        _pos++;
+        return _pos < _data.Length;
+    }
+
+    public void Reset()
+    {
+        _pos = -1;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        IEnumerable r = new Range(1, 3);
+        foreach (var i in r)
+            Console.WriteLine(i);
+        foreach (var i in r)
+            Console.WriteLine(i);
+    }
+}
+```
+</details>
+
+---
+
 ### **C# 2.0 (ноябрь 2005)**
 - **Основные нововведения**:
   - **Обобщения (Generics)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/generics/)
@@ -151,8 +220,8 @@ namespace CSharp_1
   - **Итераторы (`yield`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/iterators)
   - **Nullable типы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
   - **Ковариация и контравариация в делегатах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
-- **Поддерживаемые версии .NET**: .NET Framework 2.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2005.
+- **Версия .NET**: .NET Framework 2.0.
+- **Версия Visual Studio**: Visual Studio 2005.
 
 <details><summary>Пример кода C# 2.0</summary>
 
@@ -213,8 +282,8 @@ namespace CSharp_2
   - **Методы расширения**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
   - **Автоматические свойства**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)
   - **Инициализаторы объектов и коллекций**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
-- **Поддерживаемые версии .NET**: .NET Framework 3.5.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2008.
+- **Версия .NET**: .NET Framework 3.5.
+- **Версия Visual Studio**: Visual Studio 2008.
 
 <details><summary>Пример кода C# 3.0</summary>
 
@@ -266,8 +335,8 @@ namespace CSharp_3
   - **Динамическая типизация (`dynamic`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/reference-types#the-dynamic-type)
   - **Именованные и необязательные аргументы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)
   - **Ковариация и контравариация в обобщенных интерфейсах и делегатах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
-- **Поддерживаемые версии .NET**: .NET Framework 4.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2010.
+- **Версия .NET**: .NET Framework 4.0.
+- **Версия Visual Studio**: Visual Studio 2010.
 
 <details><summary>Пример кода C# 4.0</summary>
 
@@ -312,8 +381,8 @@ namespace ConsoleApp13
 - **Основные нововведения**:
   - **Асинхронное программирование (`async`/`await`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/async/)
   - **Информация о вызывающем методе (Caller Info Attributes)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/attributes/caller-information)
-- **Поддерживаемые версии .NET**: .NET Framework 4.5.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2012.
+- **Версия .NET**: .NET Framework 4.5.
+- **Версия Visual Studio**: Visual Studio 2012.
 
 <details><summary>Пример кода C# 5.0</summary>
 
@@ -370,8 +439,8 @@ public static class ConsoleApplication
   - **Оператор `nameof`**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/nameof)
   - **Фильтры исключений (`when`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/when)
   - **Null-условный оператор (`?.`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)
-- **Поддерживаемые версии .NET**: .NET Framework 4.6, .NET Core 1.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2015.
+- **Версия .NET**: .NET Framework 4.6, .NET Core 1.0.
+- **Версия Visual Studio**: Visual Studio 2015.
 
 <details><summary>Пример кода C# 6.0</summary>
 
@@ -434,8 +503,8 @@ public class Program
   - **Локальные функции**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/local-functions)
   - **`ref` возвращаемые значения и локальные переменные**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/ref#reference-return-values)
   - **Упрощенное объявление `out` переменных**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)
-- **Поддерживаемые версии .NET**: .NET Framework 4.7, .NET Core 2.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2017.
+- **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
+- **Версия Visual Studio**: Visual Studio 2017.
 
 ---
 
@@ -446,8 +515,8 @@ public class Program
   - **Локальные функции**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/local-functions)
   - **`ref` возвращаемые значения и локальные переменные**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/ref#reference-return-values)
   - **Упрощенное объявление `out` переменных**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)
-- **Поддерживаемые версии .NET**: .NET Framework 4.7, .NET Core 2.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2017.
+- **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
+- **Версия Visual Studio**: Visual Studio 2017.
 
 ---
 
@@ -457,8 +526,8 @@ public class Program
   - **Асинхронные потоки (`IAsyncEnumerable`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream)
   - **Индексы и диапазоны**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/tutorials/ranges-indexes)
   - **Реализация по умолчанию в интерфейсах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)
-- **Поддерживаемые версии .NET**: .NET Core 3.0, .NET Standard 2.1.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2019.
+- **Версия .NET**: .NET Core 3.0, .NET Standard 2.1.
+- **Версия Visual Studio**: Visual Studio 2019.
 
 ---
 
@@ -468,8 +537,8 @@ public class Program
   - **Инициализаторы только для чтения (`init`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
   - **Выражения `with` для записей**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/with-expression)
   - **Сопоставление с образцом для логических выражений**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-9.0/patterns3)
-- **Поддерживаемые версии .NET**: .NET 5.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2019 (16.8+).
+- **Версия .NET**: .NET 5.0.
+- **Версия Visual Studio**: Visual Studio 2019 (16.8+).
 
 ---
 
@@ -478,8 +547,8 @@ public class Program
   - **Глобальные using-директивы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-global-modifier)
   - **Упрощенное объявление пространств имен**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/namespace#using-statements-in-file-scoped-namespaces)
   - **Расширенные шаблоны свойств**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns)
-- **Поддерживаемые версии .NET**: .NET 6.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2022.
+- **Версия .NET**: .NET 6.0.
+- **Версия Visual Studio**: Visual Studio 2022.
 
 ---
 
@@ -488,8 +557,8 @@ public class Program
   - **Новые строки в интерполяциях строк**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#newlines-in-string-interpolations)
   - **Универсальные атрибуты**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#generic-attributes)
   - **Улучшения сопоставления с образцом**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/pattern-matching)
-- **Поддерживаемые версии .NET**: .NET 7.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2022 (17.4+).
+- **Версия .NET**: .NET 7.0.
+- **Версия Visual Studio**: Visual Studio 2022 (17.4+).
 
 ---
 
@@ -498,8 +567,8 @@ public class Program
   - **Первичные конструкторы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#primary-constructors)
   - **Выражения коллекции**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#collection-expressions)
   - **Параметры лямбда-кода по умолчанию**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#default-lambda-parameters)
-- **Поддерживаемые версии .NET**: .NET 8.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2022 (17.8+).
+- **Версия .NET**: .NET 8.0.
+- **Версия Visual Studio**: Visual Studio 2022 (17.8+).
 
 ---
 
@@ -510,7 +579,7 @@ public class Program
   - **Поддержка модификатора unsafe**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#ref-and-unsafe-in-iterators-and-async-methods)
   - **Частичные свойства и индексаторы в partial типах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#more-partial-members)
   - **Приоритет разрешения перегрузки**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#overload-resolution-priority)
-- **Поддерживаемые версии .NET**: .NET 9.0.
-- **Поддерживаемые версии Visual Studio**: Visual Studio 2022 (17.12+).
+- **Версия .NET**: .NET 9.0.
+- **Версия Visual Studio**: Visual Studio 2022 (17.12+).
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiptleha%2Fcs-versions&count_bg=%230C7DBD&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
