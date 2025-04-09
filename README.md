@@ -214,12 +214,12 @@ class Program
 
 ### **C# 2.0 (ноябрь 2005)**
 - **Основные нововведения**:
-  - **Обобщения (Generics)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/generics/)
-  - **Анонимные методы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods)
-  - **Статические классы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)
-  - **Итераторы (`yield`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/iterators)
-  - **Nullable типы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
-  - **Ковариация и контравариация в делегатах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
+  - Обобщения (Generics): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/generics/)
+  - Анонимные методы: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods)
+  - Статические классы: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)
+  - Итераторы (`yield`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/iterators)
+  - Nullable типы: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+  - Ковариация и контравариация в делегатах: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
 - **Версия .NET**: .NET Framework 2.0.
 - **Версия Visual Studio**: Visual Studio 2005.
 
@@ -275,13 +275,13 @@ namespace CSharp_2
 
 ### **C# 3.0 (ноябрь 2007)**
 - **Основные нововведения**:
-  - **LINQ (Language Integrated Query)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/linq/)
-  - **Лямбда-выражения**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions)
-  - **Ключевое слово `var`**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/declarations#implicitly-typed-local-variables)
-  - **Анонимные типы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)
-  - **Методы расширения**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
-  - **Автоматические свойства**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)
-  - **Инициализаторы объектов и коллекций**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
+  - LINQ (Language Integrated Query): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/linq/)
+  - Лямбда-выражения: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions)
+  - Ключевое слово `var`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/declarations#implicitly-typed-local-variables)
+  - Анонимные типы: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)
+  - Методы расширения: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
+  - Автоматические свойства: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)
+  - Инициализаторы объектов и коллекций: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
 - **Версия .NET**: .NET Framework 3.5.
 - **Версия Visual Studio**: Visual Studio 2008.
 
@@ -332,9 +332,9 @@ namespace CSharp_3
 
 ### **C# 4.0 (апрель 2010)**
 - **Основные нововведения**:
-  - **Динамическая типизация (`dynamic`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/reference-types#the-dynamic-type)
-  - **Именованные и необязательные аргументы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)
-  - **Ковариация и контравариация в обобщенных интерфейсах и делегатах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
+  - Динамическая типизация (`dynamic`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/reference-types#the-dynamic-type)
+  - Именованные и необязательные аргументы: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)
+  - Ковариация и контравариация в обобщенных интерфейсах и делегатах: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
 - **Версия .NET**: .NET Framework 4.0.
 - **Версия Visual Studio**: Visual Studio 2010.
 
@@ -379,8 +379,8 @@ namespace ConsoleApp13
 
 ### **C# 5.0 (август 2012)**
 - **Основные нововведения**:
-  - **Асинхронное программирование (`async`/`await`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/async/)
-  - **Информация о вызывающем методе (Caller Info Attributes)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/attributes/caller-information)
+  - Асинхронное программирование (`async`/`await`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/async/)
+  - Информация о вызывающем методе (Caller Info Attributes): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/attributes/caller-information)
 - **Версия .NET**: .NET Framework 4.5.
 - **Версия Visual Studio**: Visual Studio 2012.
 
@@ -432,12 +432,12 @@ public static class ConsoleApplication
 
 ### **C# 6.0 (июль 2015)**
 - **Основные нововведения**:
-  - **Инициализаторы свойств**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties#property-initializers)
-  - **Лямбда-выражения (`=>`) для определения метода**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions)
-  - **Интерполяция строк (`$""`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/tokens/interpolated)
-  - **Оператор `nameof`**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/nameof)
-  - **Фильтры исключений (`when`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/when)
-  - **Null-условный оператор (`?.`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)
+  - Инициализаторы свойств: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties#property-initializers)
+  - Лямбда-выражения (`=>`) для определения метода: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions)
+  - Интерполяция строк (`$""`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/tokens/interpolated)
+  - Оператор `nameof`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/nameof)
+  - Фильтры исключений (`when`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/when)
+  - Null-условный оператор (`?.`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)
 - **Версия .NET**: .NET Framework 4.6, .NET Core 1.0.
 - **Версия Visual Studio**: Visual Studio 2015.
 
@@ -497,11 +497,13 @@ public class Program
 
 ### **C# 7.0 (март 2017)**
 - **Основные нововведения**:
-  - **Кортежи и деконструкция**: [кортежи](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/value-tuples), [деконструкция](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/deconstruct)
-  - **Сопоставление с образцом (`pattern matching`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns)
-  - **Локальные функции**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/local-functions)
-  - **`ref` возвращаемые значения и локальные переменные**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/ref#reference-return-values)
-  - **Упрощенное объявление `out` переменных**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)
+  - Кортежи и деконструкция: [кортежи](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/value-tuples), [деконструкция](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/deconstruct)
+  - Сопоставление с образцом (`pattern matching`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns)
+  - Локальные функции: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/local-functions)
+  - `ref` возвращаемые значения и локальные переменные: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/ref#reference-return-values)
+  - Упрощенное объявление `out` переменных: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)
+  - Бинарные литералы и целочисленные разделители: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#integer-literals)
+  - Больше возвращаемых типов в асинхронных методах: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/asynchronous-programming/async-return-types)
 - **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017.
 
@@ -509,21 +511,39 @@ public class Program
 
 ### **C# 7.1 (август 2017)**
 - **Основные нововведения**:
-  - **Асинхронный Main**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-1#асинхронный-метод-main)
-  - **Сопоставление с образцом (`pattern matching`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns)
-  - **Локальные функции**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/local-functions)
-  - **`ref` возвращаемые значения и локальные переменные**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/ref#reference-return-values)
-  - **Упрощенное объявление `out` переменных**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)
-- **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
-- **Версия Visual Studio**: Visual Studio 2017.
+  - Асинхронный `Main`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-1#async-main)
+  - Вывод типов для `default`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-1#default-literal)
+  - Именованные аргументы: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-1#infer-tuple-names)
+- **Версия .NET**: .NET Framework 4.7.1, .NET Core 2.0.
+- **Версия Visual Studio**: Visual Studio 2017 (15.3+).
+
+---
+
+### **C# 7.2 (декабрь 2017)**
+- **Основные нововведения**:
+  - Модификатор `in`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/in-parameter-modifier)
+  - Безопасный `stackalloc`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/stackalloc)
+  - `private protected`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/private-protected)
+- **Версия .NET**: .NET Framework 4.7.2, .NET Core 2.0.
+- **Версия Visual Studio**: Visual Studio 2017 (15.5+).
+
+---
+
+### **C# 7.3 (май 2018)**
+- **Основные нововведения**:
+  - Сравнение кортежей: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-3#tuple-equality)
+  - Улучшения `fixed`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-3#indexing-fixed-fields)
+  - Оптимизация `stackalloc`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-3#stackalloc-arrays)
+- **Версия .NET**: .NET Framework 4.8, .NET Core 2.1.
+- **Версия Visual Studio**: Visual Studio 2017 (15.7+).
 
 ---
 
 ### **C# 8.0 (сентябрь 2019)**
 - **Основные нововведения**:
-  - **Nullable ссылочные типы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/nullable-references)
-  - **Асинхронные потоки (`IAsyncEnumerable`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream)
-  - **Индексы и диапазоны**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/tutorials/ranges-indexes)
+  - Nullable ссылочные типы: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/nullable-references)
+  - Асинхронные потоки (`IAsyncEnumerable`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream)
+  - Индексы и диапазоны: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/tutorials/ranges-indexes)
   - **Реализация по умолчанию в интерфейсах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)
 - **Версия .NET**: .NET Core 3.0, .NET Standard 2.1.
 - **Версия Visual Studio**: Visual Studio 2019.
@@ -532,10 +552,10 @@ public class Program
 
 ### **C# 9.0 (ноябрь 2020)**
 - **Основные нововведения**:
-  - **Записи (Records)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/record)
-  - **Инициализаторы только для чтения (`init`)**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
-  - **Выражения `with` для записей**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/with-expression)
-  - **Сопоставление с образцом для логических выражений**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-9.0/patterns3)
+  - Записи (Records): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/record)
+  - Инициализаторы только для чтения (`init`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
+  - Выражения `with` для записей: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/with-expression)
+  - Сопоставление с образцом для логических выражений: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-9.0/patterns3)
 - **Версия .NET**: .NET 5.0.
 - **Версия Visual Studio**: Visual Studio 2019 (16.8+).
 
@@ -543,9 +563,9 @@ public class Program
 
 ### **C# 10.0 (ноябрь 2021)**
 - **Основные нововведения**:
-  - **Глобальные using-директивы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-global-modifier)
-  - **Упрощенное объявление пространств имен**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/namespace#using-statements-in-file-scoped-namespaces)
-  - **Расширенные шаблоны свойств**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns)
+  - Глобальные `using`-директивы: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-global-modifier)
+  - Упрощенное объявление пространств имен: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/namespace#using-statements-in-file-scoped-namespaces)
+  - Расширенные шаблоны свойств: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns)
 - **Версия .NET**: .NET 6.0.
 - **Версия Visual Studio**: Visual Studio 2022.
 
@@ -553,9 +573,9 @@ public class Program
 
 ### **C# 11.0 (ноябрь 2022)**
 - **Основные нововведения**:
-  - **Новые строки в интерполяциях строк**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#newlines-in-string-interpolations)
-  - **Универсальные атрибуты**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#generic-attributes)
-  - **Улучшения сопоставления с образцом**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/pattern-matching)
+  - Новые строки в интерполяциях строк: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#newlines-in-string-interpolations)
+  - Универсальные атрибуты: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#generic-attributes)
+  - Улучшения сопоставления с образцом: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/pattern-matching)
 - **Версия .NET**: .NET 7.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.4+).
 
@@ -563,9 +583,9 @@ public class Program
 
 ### **C# 12.0 (ноябрь 2023)**
 - **Основные нововведения**:
-  - **Первичные конструкторы**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#primary-constructors)
-  - **Выражения коллекции**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#collection-expressions)
-  - **Параметры лямбда-кода по умолчанию**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#default-lambda-parameters)
+  - Первичные конструкторы: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#primary-constructors)
+  - Выражения коллекции: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#collection-expressions)
+  - Параметры лямбда-кода по умолчанию: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#default-lambda-parameters)
 - **Версия .NET**: .NET 8.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.8+).
 
@@ -573,11 +593,11 @@ public class Program
 
 ### **C# 13.0 (ноябрь 2024)**
 - **Основные нововведения**:
-  - **Коллекции params**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#params-collections)
-  - **Неявный доступ к индексу**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#implicit-index-access)
-  - **Поддержка модификатора unsafe**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#ref-and-unsafe-in-iterators-and-async-methods)
-  - **Частичные свойства и индексаторы в partial типах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#more-partial-members)
-  - **Приоритет разрешения перегрузки**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#overload-resolution-priority)
+  - Коллекции `params`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#params-collections)
+  - Неявный доступ к индексу: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#implicit-index-access)
+  - Поддержка модификатора `unsafe`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#ref-and-unsafe-in-iterators-and-async-methods)
+  - Частичные свойства и индексаторы в partial типах: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#more-partial-members)
+  - Приоритет разрешения перегрузки: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#overload-resolution-priority)
 - **Версия .NET**: .NET 9.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.12+).
 
