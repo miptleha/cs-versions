@@ -509,7 +509,7 @@ public class Program
 - **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017.
 
-<details><summary>Пример кода на C# 7.0</summary>
+<details><summary>Пример кода C# 7.0</summary>
 
 ```csharp
 using System;
