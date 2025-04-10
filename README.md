@@ -556,11 +556,33 @@ class Program
 
 ### **C# 7.1 (август 2017)**
 - **Основные нововведения**:
-  - Асинхронный `Main`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-1#async-main)
-  - Вывод типов для `default`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-1#default-literal)
-  - Именованные аргументы: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-1#infer-tuple-names)
+  - Асинхронный `Main`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/program-structure/main-command-line)
+  - Вывод типов для `default`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/default#default-literal)
+  - Вывод имени члена кортежа: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/value-tuples#tuple-field-names)
+  - Именованные параметры конструктора атрибута: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/advanced-topics/reflection-and-attributes/#attribute-parameters)
+  - Сопоставление с образцом для обобщений: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/pattern-matching#type-tests)
 - **Версия .NET**: .NET Framework 4.7.1, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017 (15.3+).
+
+<details><summary>Пример кода C# 7.1</summary>
+
+```csharp
+using System;
+using System.Threading.Tasks;
+
+class Program
+{
+    [Obsolete(message: "Этот метод устарел")]
+    static async Task Main()
+    {
+        int count = 1000;
+        string msg = default;
+        var t = (count, msg);
+        await Task.Delay(t.count);
+    }
+}
+```
+</details>
 
 ---
 
