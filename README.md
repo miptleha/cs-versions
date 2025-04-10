@@ -554,7 +554,8 @@ class Program
                 break;
         }
     }
-}```
+}
+```
 </details>
 
 ---
