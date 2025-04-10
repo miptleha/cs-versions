@@ -504,6 +504,7 @@ public class Program
   - Упрощенное объявление `out` переменных: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)
   - Бинарные литералы и целочисленные разделители: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#integer-literals)
   - Больше возвращаемых типов в асинхронных методах: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/asynchronous-programming/async-return-types)
+  - `throw` выражения: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/exception-handling-statements#the-throw-expression)
 - **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017.
 
