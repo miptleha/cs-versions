@@ -1,5 +1,6 @@
 # История языка C# 
-Нововведения в разных версиях языка C#. Текст сгенерирован с помощью `DeepSeek` (исправленный и дополненный ссылками и примерами).  
+Нововведения в разных версиях языка C#. Текст сгенерирован с помощью `DeepSeek`.  
+После чего был исправлен и дополнен ссылками и примерами.    
 Подробнее можно прочитать у профильных блогеров: [блогер 1](https://andrey.moveax.ru/), [блогер 2](https://www.thomasclaudiushuber.com/blog/), [блогер 3](https://pvs-studio.ru/ru/blog/posts/csharp/), [блогер 4](https://metanit.com/sharp/tutorial/23.1.php), [блогер 5](https://endjin.com/what-we-think/editions/dotnet-development).  
 Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history), на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp), ответ в [Stack Overflow](https://stackoverflow.com/questions/247621/what-are-the-correct-version-numbers-for-c/247623#247623).
 
