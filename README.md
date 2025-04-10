@@ -514,7 +514,6 @@ public class Program
 ```csharp
 using System;
 
-
 class Point
 {
     public int X { get; }
@@ -534,22 +533,28 @@ class Program
         void PrintPoint(Point p) => Console.WriteLine(p.X + " " + p.Y);
     }
 
+    static ref Point GetPoint(Point[] points)
+    {
+        return ref points[0];
+    }
+
     static void Main()
     {
         int.TryParse("1", out int val);
         Point[] points = { new Point(val, 2_0), new Point(3, 4) };
-        var (x, y) = points[0];
+        ref var p = ref GetPoint(points);
+        p = new Point(5, 6);
+        var (x, y) = p;
         PrintPoints(points);
 
         switch (points[0])
         {
-            case Point p when p.X == x:
+            case Point point when point.X == x:
                 Console.WriteLine("Test ok");
                 break;
         }
     }
-}
-```
+}```
 </details>
 
 ---
