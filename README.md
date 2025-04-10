@@ -504,9 +504,53 @@ public class Program
   - Упрощенное объявление `out` переменных: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)
   - Бинарные литералы и целочисленные разделители: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#integer-literals)
   - Больше возвращаемых типов в асинхронных методах: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/asynchronous-programming/async-return-types)
+  - Лямбда-выражения для остальных частей класса: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members)
   - `throw` выражения: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/exception-handling-statements#the-throw-expression)
 - **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017.
+
+<details><summary>Пример кода на C# 7.0</summary>
+
+```csharp
+using System;
+
+
+class Point
+{
+    public int X { get; }
+    public int Y { get; }
+
+    public Point(int x, int y) => (X, Y) = (x, y);
+    public void Deconstruct(out int x, out int y) => (x, y) = (X, Y);
+}
+
+class Program
+{
+    static void PrintPoints(Point[] points)
+    {
+        foreach (var p in points)
+            PrintPoint(p);
+
+        void PrintPoint(Point p) => Console.WriteLine(p.X + " " + p.Y);
+    }
+
+    static void Main()
+    {
+        int.TryParse("1", out int val);
+        Point[] points = { new Point(val, 2_0), new Point(3, 4) };
+        var (x, y) = points[0];
+        PrintPoints(points);
+
+        switch (points[0])
+        {
+            case Point p when p.X == x:
+                Console.WriteLine("Test ok");
+                break;
+        }
+    }
+}
+```
+</details>
 
 ---
 
