@@ -442,6 +442,8 @@ public static class ConsoleApplication
 - **Версия .NET**: .NET Framework 4.6, .NET Core 1.0.
 - **Версия Visual Studio**: Visual Studio 2015.
 
+[подробнее с примерами](https://andrey.moveax.ru/post/csharp-new-festures-in-csharp-6)
+
 <details><summary>Пример кода C# 6.0</summary>
 
 ```csharp
@@ -510,6 +512,8 @@ public class Program
 - **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017.
 
+[подробнее с примерами](https://itvdn.com/ru/blog/article/csharp7)
+
 <details><summary>Пример кода C# 7.0</summary>
 
 ```csharp
@@ -571,6 +575,8 @@ class Program
 - **Версия .NET**: .NET Framework 4.7.1, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017 (15.3+).
 
+[подробнее с примерами](https://andrey.moveax.ru/post/csharp-features-v7-1)
+
 <details><summary>Пример кода C# 7.1</summary>
 
 ```csharp
@@ -606,6 +612,40 @@ class Program
 - **Версия .NET**: .NET Framework 4.7.2, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017 (15.5+).
 
+[подробнее с примерами](https://andrey.moveax.ru/post/csharp-features-v7-2)
+
+<details><summary>Пример кода C# 7.2</summary>
+
+```csharp
+using System;
+
+readonly struct Point
+{
+    public Point(int x, int y) => (X, Y) = (x, y);
+    public int X { get; }
+    public int Y { get; }
+    public override string ToString() => $"({X}, {Y})";
+    public double DistanceTo(Point p) => Math.Sqrt(Math.Pow(X - p.X, 2) + Math.Pow(Y - p.Y, 2));
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ref readonly Point GetClosest(in Point t, in Point a, in Point b) =>
+            ref (t.DistanceTo(a) < t.DistanceTo(b) ? ref a : ref b);
+
+        Point target = new Point(1, -1);
+        Point[] points = new Point[] { new Point(2, 3), new Point(3, 2) };
+        ref readonly var closest = ref GetClosest(t: target, points[0], b: points[1]);
+
+        Console.WriteLine($"Точка {target}");
+        Console.WriteLine($"Массив точек: {String.Join(", ", points)}");
+        Console.WriteLine($"Ближайшая точка в массиве: {closest}");
+    }
+}
+```
+</details>
 ---
 
 ### **C# 7.3 (май 2018)**
@@ -615,6 +655,8 @@ class Program
   - Оптимизация `stackalloc`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-3#stackalloc-arrays)
 - **Версия .NET**: .NET Framework 4.8, .NET Core 2.1.
 - **Версия Visual Studio**: Visual Studio 2017 (15.7+).
+
+[подробнее с примерами](https://andrey.moveax.ru/post/csharp-features-v7-3-managed)
 
 ---
 
@@ -627,6 +669,8 @@ class Program
 - **Версия .NET**: .NET Core 3.0, .NET Standard 2.1.
 - **Версия Visual Studio**: Visual Studio 2019.
 
+[подробнее с примерами](https://andrey.moveax.ru/post/csharp-features-v8-0-small-features)
+
 ---
 
 ### **C# 9.0 (ноябрь 2020)**
@@ -638,6 +682,8 @@ class Program
 - **Версия .NET**: .NET 5.0.
 - **Версия Visual Studio**: Visual Studio 2019 (16.8+).
 
+[подробнее с примерами](https://andrey.moveax.ru/post/csharp-features-v8-0-small-features)
+
 ---
 
 ### **C# 10.0 (ноябрь 2021)**
@@ -647,6 +693,8 @@ class Program
   - Расширенные шаблоны свойств: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns)
 - **Версия .NET**: .NET 6.0.
 - **Версия Visual Studio**: Visual Studio 2022.
+
+[подробнее с примерами](https://pvs-studio.ru/ru/blog/posts/csharp/0875/)
 
 ---
 
@@ -658,6 +706,8 @@ class Program
 - **Версия .NET**: .NET 7.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.4+).
 
+[подробнее с примерами](https://pvs-studio.ru/ru/blog/posts/csharp/1002/)
+
 ---
 
 ### **C# 12.0 (ноябрь 2023)**
@@ -667,6 +717,8 @@ class Program
   - Параметры лямбда-кода по умолчанию: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#default-lambda-parameters)
 - **Версия .NET**: .NET 8.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.8+).
+
+[подробнее с примерами](https://pvs-studio.ru/ru/blog/posts/csharp/1074/)
 
 ---
 
@@ -679,5 +731,7 @@ class Program
   - Приоритет разрешения перегрузки: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#overload-resolution-priority)
 - **Версия .NET**: .NET 9.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.12+).
+
+[подробнее с примерами](https://metanit.com/sharp/tutorial/23.3.php)
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiptleha%2Fcs-versions&count_bg=%230C7DBD&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
