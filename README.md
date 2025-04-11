@@ -596,9 +596,13 @@ class Program
 ### **C# 7.2 (декабрь 2017)**
 - **Основные нововведения**:
   - Модификатор `in`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/in-parameter-modifier)
+  - Упрощение в именованных аргументах: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)
   - Безопасный `stackalloc`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/stackalloc)
   - `private protected`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/private-protected)
   - Условные `ref`-выражения: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/conditional-operator#conditional-ref-expression)
+  - Модификатор возвращаемого значения `ref readonly`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/readonly#ref-readonly-return-example)
+  - Неизменяемые структуры `readonly struct`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct#readonly-struct)
+  - Стековые структуры `ref struct`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/ref-struct)
 - **Версия .NET**: .NET Framework 4.7.2, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017 (15.5+).
 
