@@ -651,13 +651,35 @@ class Program
 
 ### **C# 7.3 (май 2018)**
 - **Основные нововведения**:
-  - Сравнение кортежей: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-3#tuple-equality)
-  - Улучшения `fixed`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-3#indexing-fixed-fields)
-  - Оптимизация `stackalloc`: [обзор](https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-7-3#stackalloc-arrays)
+  - Сравнение кортежей: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/value-tuples#tuple-equality)
+  - Новые ограничения параметра типа: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters#unmanaged-constraint)
+  - Переназначение локальных ссылок `ref`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/declarations#reference-variables)
+  - Улучшения `fixed`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/fixed)
+  - Улучшения `stackalloc`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/stackalloc)
 - **Версия .NET**: .NET Framework 4.8, .NET Core 2.1.
 - **Версия Visual Studio**: Visual Studio 2017 (15.7+).
 
-[подробнее с примерами](https://andrey.moveax.ru/post/csharp-features-v7-3-managed)
+подробнее с примерами: [часть 1](https://andrey.moveax.ru/post/csharp-features-v7-3-managed), [часть 2](https://andrey.moveax.ru/post/csharp-features-v7-3-unmanaged)
+
+<details><summary>Пример кода C# 7.3</summary>
+
+```csharp
+using System;
+
+public class Example
+{
+    public static void Main()
+    {
+        int x = 5, y = 10;
+        ref int r = ref x;
+        r = ref y;
+        r = 42;
+        var tuple = (x, y);
+        Console.WriteLine(tuple == (5, 42));
+    }
+}
+```
+</details>
 
 ---
 
