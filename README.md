@@ -688,7 +688,13 @@ public class Example
   - Nullable ссылочные типы: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/nullable-references)
   - Асинхронные потоки (`IAsyncEnumerable`): [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream)
   - Индексы и диапазоны: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/tutorials/ranges-indexes)
-  - **Реализация по умолчанию в интерфейсах**: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)
+  - Реализация по умолчанию в интерфейсах: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)
+  - Выражение `switch`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/switch-expression)
+  - Улучшенное сопоставление шаблонов: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns)
+  - Декларации `using`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-8.0/using)
+  - Статические локальные функции: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/static)
+  - `readonly` члены в структурах: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct#readonly-instance-members)
+  - Присваивание при значении `null`: [обзор](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/null-coalescing-operator)
 - **Версия .NET**: .NET Core 3.0, .NET Standard 2.1.
 - **Версия Visual Studio**: Visual Studio 2019.
 
