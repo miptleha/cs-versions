@@ -692,7 +692,7 @@ public class Example
 - **Версия .NET**: .NET Core 3.0, .NET Standard 2.1.
 - **Версия Visual Studio**: Visual Studio 2019.
 
-[подробнее с примерами](https://andrey.moveax.ru/post/csharp-features-v8-0-small-features)
+подробнее с примерами: [часть 1](https://andrey.moveax.ru/post/csharp-features-v8-0-small-features), [часть 2](https://andrey.moveax.ru/post/csharp-features-v8-0-nullable-reference-types), [часть 3](https://andrey.moveax.ru/post/csharp-features-v8-0-async-streams), [часть 4](https://andrey.moveax.ru/post/csharp-features-v8-0-default-implementation-for-interface-methods), [часть 5](https://andrey.moveax.ru/post/csharp-features-v8-0-indexes-and-ranges), [часть 6](https://andrey.moveax.ru/post/csharp-features-v8-0-new-switch-expression), [часть 7](https://andrey.moveax.ru/post/csharp-features-v8-0-using-declarations).
 
 ---
 
