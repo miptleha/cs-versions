@@ -5,8 +5,8 @@
 Также есть похожая статья на сайте [Микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history), на сайте [Википедии](https://ru.wikipedia.org/wiki/C_Sharp), ответ в [Stack Overflow](https://stackoverflow.com/questions/247621/what-are-the-correct-version-numbers-for-c/247623#247623), вехи в [github](https://github.com/dotnet/csharplang/milestones).
 
 От себя добавлю, что в проекте можно менять версию .NET, но нельзя менять версию языка C#.  
-Скажем, Visual Studio 2019 выставляет версию языка в 7.3 для классического .NET Framework любой версии.   
-Таким образом, версия C# привязана к версии Visual Studio, а не к версии .NET.  
+Скажем, Visual Studio 2019 (2022) выставляет версию языка в 7.3 для классического .NET Framework любой версии.   
+А Visual Studio 2022 для .NET Core 3, 5, 6, 7, 8, 9 выставляет версию языка 8, 9, 10, 11, 12, 13 соотвественно.
 Уточнить версию компилятора можно вставив в исходники строку ```#error version```.   
 В статье я рассматриваю только изменения синтаксиса языка, нововведения в стандартной библиотеке не упоминаются.  
 
