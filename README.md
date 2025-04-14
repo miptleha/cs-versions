@@ -700,6 +700,50 @@ public class Example
 
 подробнее с примерами: [часть 1](https://andrey.moveax.ru/post/csharp-features-v8-0-small-features), [часть 2](https://andrey.moveax.ru/post/csharp-features-v8-0-nullable-reference-types), [часть 3](https://andrey.moveax.ru/post/csharp-features-v8-0-async-streams), [часть 4](https://andrey.moveax.ru/post/csharp-features-v8-0-default-implementation-for-interface-methods), [часть 5](https://andrey.moveax.ru/post/csharp-features-v8-0-indexes-and-ranges), [часть 6](https://andrey.moveax.ru/post/csharp-features-v8-0-new-switch-expression), [часть 7](https://andrey.moveax.ru/post/csharp-features-v8-0-using-declarations).
 
+<details><summary>Пример кода C# 8.0</summary>
+
+```csharp
+#nullable enable
+
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+internal class Program
+{
+    static async Task Main(string[] args)
+    {
+        int[]? arr = null;
+        var list = new List<int>();
+        await foreach (var i in GetIntAsync())
+            list.Add(i);
+        arr ??= list.ToArray()[2..7];
+
+        ProcessRange(null, arr);
+        ProcessRange("null", null);
+        ProcessRange("empty", Array.Empty<int>());
+
+        static async IAsyncEnumerable<int> GetIntAsync()
+        {
+            for (int i = 0; i < 10; i++)
+                yield return i;
+        }
+
+        static void ProcessRange(string? title, int[]? range)
+        {
+            var mess = range switch
+            {
+                null => "null",
+                _ when range.Length == 0 => "empty",
+                _ => string.Join(", ", range)
+            };
+            Console.WriteLine(@$"{title ?? "range"}: {mess}");
+        }
+    }
+}
+```
+</details>
+
 ---
 
 ### **C# 9.0 (ноябрь 2020)**
