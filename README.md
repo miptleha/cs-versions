@@ -748,6 +748,7 @@ internal class Program
 
 ### **C# 9.0 (ноябрь 2020)**
 - **Основные нововведения**:
+  - Операторы верхнего уровня: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/program-structure/top-level-statements)
   - Записи (Records): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/record)
   - Инициализаторы только для чтения (`init`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
   - Выражения `with` для записей: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/with-expression)
@@ -755,7 +756,7 @@ internal class Program
 - **Версия .NET**: .NET 5.0.
 - **Версия Visual Studio**: Visual Studio 2019 (16.8+).
 
-[подробнее с примерами](https://andrey.moveax.ru/post/csharp-features-v8-0-small-features)
+подробнее с примерами: [часть 1](https://andrey.moveax.ru/post/csharp-features-v9-0-top-level-statement), [часть 2](https://andrey.moveax.ru/post/csharp-features-v9-0-pattern-matching), [часть 3](https://andrey.moveax.ru/post/csharp-features-v9-0-records-basics), [часть 4](https://andrey.moveax.ru/post/csharp-features-v9-0-records-advanced), [часть 5](https://andrey.moveax.ru/post/csharp-features-v9-0-init-only-setter).
 
 ---
 
