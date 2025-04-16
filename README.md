@@ -758,6 +758,33 @@ internal class Program
 
 подробнее с примерами: [часть 1](https://andrey.moveax.ru/post/csharp-features-v9-0-top-level-statement), [часть 2](https://andrey.moveax.ru/post/csharp-features-v9-0-pattern-matching), [часть 3](https://andrey.moveax.ru/post/csharp-features-v9-0-records-basics), [часть 4](https://andrey.moveax.ru/post/csharp-features-v9-0-records-advanced), [часть 5](https://andrey.moveax.ru/post/csharp-features-v9-0-init-only-setter).
 
+<details><summary>Пример кода C# 9.0</summary>
+
+```csharp
+using System;
+using System.Linq;
+using System.Net.Http;
+using System.Text.Json;
+
+var client = new HttpClient();
+var data = await client.GetStringAsync("https://jsonplaceholder.typicode.com/posts");
+var posts = JsonSerializer.Deserialize<Post[]>(data)!;
+var firstPost = posts.Where(p => p is { id:  1 }).First();
+Console.WriteLine(firstPost);
+var copyPost = firstPost with { title = "New title" };
+Console.WriteLine(copyPost);
+
+record Post (int id, int userId, string title, string body)
+{
+    public override string ToString() =>
+        $"id: {id}, userId: {userId}, title: {Trunc(title, 20)}, body: {Trunc(body?.Replace('\n', ' '), 20)}";
+
+    string Trunc(string str, int len) =>
+        str?.Length > len ? str[..len] + "..." : str;
+}
+```
+</details>
+
 ---
 
 ### **C# 10.0 (ноябрь 2021)**
