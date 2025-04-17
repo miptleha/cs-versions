@@ -772,10 +772,13 @@ var posts = JsonSerializer.Deserialize<Post[]>(data)!;
 var firstPost = posts.Where(p => p is { id:  1 }).First();
 Console.WriteLine(firstPost);
 var copyPost = firstPost with { title = "New title" };
+copyPost.body = "New body";
 Console.WriteLine(copyPost);
 
-record Post (int id, int userId, string title, string body)
+record Post (int id, int userId, string title)
 {
+    public string body { get; set; }
+
     public override string ToString() =>
         $"id: {id}, userId: {userId}, title: {Trunc(title, 20)}, body: {Trunc(body?.Replace('\n', ' '), 20)}";
 
@@ -789,6 +792,7 @@ record Post (int id, int userId, string title, string body)
 
 ### **C# 10.0 (ноябрь 2021)**
 - **Основные нововведения**:
+  - Улучшенные структуры: инициализация свойств и полей, конструктор без параметров, `record struct`, `readonly record struct`
   - Глобальные `using`-директивы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-global-modifier)
   - Упрощенное объявление пространств имен: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/namespace#using-statements-in-file-scoped-namespaces)
   - Расширенные шаблоны свойств: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns)
