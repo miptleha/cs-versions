@@ -799,10 +799,36 @@ record Post (int id, int userId, string title)
   - Расширенные шаблоны свойств: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns)
   - Естественный тип ламбда-выражения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions#explicit-return-type)
   - Явный возвращаемый тип лямбда-выражения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions#explicit-return-type)
+  - Константные интерполируемые строки
 - **Версия .NET**: .NET 6.0.
 - **Версия Visual Studio**: Visual Studio 2022.
 
 [подробнее с примерами](https://pvs-studio.ru/ru/blog/posts/csharp/0875/)
+
+<details><summary>Пример кода C# 10.0</summary>
+
+```csharp
+global using System;
+namespace CSharp10Sample;
+
+readonly record struct Number(int value)
+{
+    public override string ToString() => value.ToString();
+}
+
+class Program
+{
+    static void Main()
+    {
+        var n = new Number();
+        n = n with { value = 10 };
+        var square = Number (Number n) => new Number(n.value * n.value);
+        const string title = $"Just for information";
+        Console.WriteLine($"{title}: {n} * {n} = {square(n)}");
+    }
+}
+```
+</details>
 
 ---
 
