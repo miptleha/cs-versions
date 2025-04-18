@@ -834,13 +834,15 @@ class Program
 
 ### **C# 11.0 (ноябрь 2022)**
 - **Основные нововведения**:
-  - Новые строки в интерполяциях строк: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#newlines-in-string-interpolations)
+  - Необработанные строковые литералы (`"""`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/strings/#raw-string-literals)
+  - Модификатор `file` для типов: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/file)
+  - Обязательный модификатор `required`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/required)
   - Универсальные атрибуты: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#generic-attributes)
   - Улучшения сопоставления с образцом: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/pattern-matching)
 - **Версия .NET**: .NET 7.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.4+).
 
-[подробнее с примерами](https://pvs-studio.ru/ru/blog/posts/csharp/1002/)
+[подробнее с примерами](https://metanit.com/sharp/tutorial/23.1.php)
 
 ---
 
