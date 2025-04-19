@@ -839,6 +839,8 @@ class Program
   - Обязательный модификатор `required`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/required)
   - Универсальные атрибуты: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#generic-attributes)
   - Шаблоны списков: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns#list-patterns)
+  - Строковые литералы `UTF-8`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/reference-types#utf-8-string-literals)
+  - Статические абстрактные (`static abstract`) и статические виртуальные (`static virtual`) члены интерфейса: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/interface#static-abstract-and-virtual-members)
 - **Версия .NET**: .NET 7.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.4+).
 
