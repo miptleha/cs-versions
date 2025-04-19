@@ -838,7 +838,7 @@ class Program
   - Модификатор `file` для типов: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/file)
   - Обязательный модификатор `required`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/required)
   - Универсальные атрибуты: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#generic-attributes)
-  - Улучшения сопоставления с образцом: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/pattern-matching)
+  - Шаблоны списков: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns#list-patterns)
 - **Версия .NET**: .NET 7.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.4+).
 
