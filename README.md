@@ -846,6 +846,37 @@ class Program
 
 [подробнее с примерами](https://metanit.com/sharp/tutorial/23.1.php)
 
+<details><summary>Пример кода C# 11.0</summary>
+
+```csharp
+var container = ContainerString.Create("""Apple, Cherry""");
+var items = container.List switch
+{
+    ["Apple, Plum"] => "Apple and Plum",
+    [.., "Cherry"] => "Last Cherry",
+    _ => "Unknown container"
+};
+Console.WriteLine(items);
+
+file interface IContainer<T> where T: IContainer<T>
+{
+    static abstract T Create(string data);
+}
+
+file class ContainerString : IContainer<ContainerString>
+{
+    public required List<string> List { get; init; }
+    public static ContainerString Create(string data) => new()
+    {
+        List = data
+            .Split(",")
+            .Select(s => s.Trim())
+            .ToList()
+    };
+}
+```
+</details>
+
 ---
 
 ### **C# 12.0 (ноябрь 2023)**
