@@ -881,9 +881,11 @@ file class ContainerString : IContainer<ContainerString>
 
 ### **C# 12.0 (ноябрь 2023)**
 - **Основные нововведения**:
-  - Первичные конструкторы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#primary-constructors)
-  - Выражения коллекции: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#collection-expressions)
-  - Параметры лямбда-кода по умолчанию: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12#default-lambda-parameters)
+  - Первичные конструкторы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/tutorials/primary-constructors)
+  - Выражения коллекции: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/collection-expressions)
+  - Параметры лямбда-кода по умолчанию: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions#input-parameters-of-a-lambda-expression)
+  - Модификатор `ref readonly` для параметров метода: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/method-parameters#ref-readonly-modifier)
+  - Псевдоним любого типа: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-using-alias)
 - **Версия .NET**: .NET 8.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.8+).
 
