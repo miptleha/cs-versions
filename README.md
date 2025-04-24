@@ -887,7 +887,7 @@ file class ContainerString : IContainer<ContainerString>
 - **Версия .NET**: .NET 8.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.8+).
 
-[подробнее с примерами](https://pvs-studio.ru/ru/blog/posts/csharp/1074/)
+[подробнее с примерами](https://metanit.com/sharp/tutorial/23.2.php)
 
 ---
 
