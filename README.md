@@ -891,6 +891,46 @@ file class ContainerString : IContainer<ContainerString>
 
 [подробнее с примерами](https://metanit.com/sharp/tutorial/23.2.php)
 
+<details><summary>Пример кода C# 12.0</summary>
+
+```csharp
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using IntContainerInfo = (int Count, int Sum);
+
+IntContainer data = [1, 2, 3];
+Span<int> add = stackalloc int[] { 4, 1 };
+add[0] = 5;
+data = data.Concat(ref add).Exclude(1);
+Console.WriteLine($"Content: {data}, Info: {data.Info}");
+
+[CollectionBuilder(typeof(IntContainer), "Create")]
+public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
+{
+    private readonly int[] _items = items.ToArray();
+
+    public static IntContainer Create(ReadOnlySpan<int> items) => new(items);
+
+    public IntContainer Concat(ref readonly Span<int> items) => new([.. _items, .. items]);
+
+    public IntContainer Exclude(int v = 0) => new(_items.Where(i => i != v).ToArray());
+
+    public IntContainerInfo Info => (_items.Count(), _items.Sum());
+
+    public override string ToString() => $"[{string.Join(", ", _items)}]";
+
+    public IEnumerator<int> GetEnumerator() => _items.AsEnumerable().GetEnumerator();
+
+    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+}
+
+
+```
+</details>
+
 ---
 
 ### **C# 13.0 (ноябрь 2024)**
