@@ -844,7 +844,7 @@ class Program
 - **Версия .NET**: .NET 7.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.4+).
 
-[подробнее с примерами](https://metanit.com/sharp/tutorial/23.1.php)
+[подробнее с примерами](https://metanit.com/sharp/tutorial/23.1.php), [на сайте микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11)
 
 <details><summary>Пример кода C# 11.0</summary>
 
@@ -889,7 +889,7 @@ file class ContainerString : IContainer<ContainerString>
 - **Версия .NET**: .NET 8.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.8+).
 
-[подробнее с примерами](https://metanit.com/sharp/tutorial/23.2.php)
+[подробнее с примерами](https://metanit.com/sharp/tutorial/23.2.php), [на сайте микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-12)
 
 <details><summary>Пример кода C# 12.0</summary>
 
@@ -911,22 +911,14 @@ Console.WriteLine($"Content: {data}, Info: {data.Info}");
 public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
 {
     private readonly int[] _items = items.ToArray();
-
     public static IntContainer Create(ReadOnlySpan<int> items) => new(items);
-
     public IntContainer Concat(ref readonly Span<int> items) => new([.. _items, .. items]);
-
     public IntContainer Exclude(int v = 0) => new(_items.Where(i => i != v).ToArray());
-
     public IntContainerInfo Info => (_items.Count(), _items.Sum());
-
     public override string ToString() => $"[{string.Join(", ", _items)}]";
-
     public IEnumerator<int> GetEnumerator() => _items.AsEnumerable().GetEnumerator();
-
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 }
-
 
 ```
 </details>
@@ -943,7 +935,7 @@ public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
 - **Версия .NET**: .NET 9.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.12+).
 
-[подробнее с примерами](https://metanit.com/sharp/tutorial/23.3.php)
+[подробнее с примерами](https://metanit.com/sharp/tutorial/23.3.php), [на сайте микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13)
 
 ---
 
@@ -959,6 +951,6 @@ public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
 - **Версия .NET**: .NET 10.0.
 - **Версия Visual Studio**: Visual Studio 2022.
 
-[подробнее](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14)
+[на сайте микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14)
 
 [//]: [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiptleha%2Fcs-versions&count_bg=%230C7DBD&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
