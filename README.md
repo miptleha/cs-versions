@@ -927,7 +927,7 @@ public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
 
 ### **C# 13.0 (ноябрь 2024)**
 - **Основные нововведения**:
-  - Коллекции `params`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#params-collections)
+  - Коллекции `params`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/method-parameters#params-modifier)
   - Неявный доступ к индексу: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#implicit-index-access)
   - Поддержка модификатора `unsafe`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#ref-and-unsafe-in-iterators-and-async-methods)
   - Частичные свойства и индексаторы в partial типах: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#more-partial-members)
