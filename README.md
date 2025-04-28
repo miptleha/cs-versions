@@ -945,4 +945,21 @@ public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
 
 [подробнее с примерами](https://metanit.com/sharp/tutorial/23.3.php)
 
+---
+
+### **C# 14.0 (Preview)**
+- **Основные нововведения**:
+  - Члены расширения
+  - Условное присваивание null
+  - `nameof` поддерживает несвязанные универсальные типы
+  - Более неявные преобразования для `Span<T>` и `ReadOnlySpan<T>`
+  - Модификаторы простых лямбда-параметров
+  - `field` поддерживаемые свойства
+  - `partial` события и конструкторы
+
+- **Версия .NET**: .NET 10.0.
+- **Версия Visual Studio**: Visual Studio 2022.
+
+[подробнее](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14)
+
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiptleha%2Fcs-versions&count_bg=%230C7DBD&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
