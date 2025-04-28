@@ -947,7 +947,7 @@ public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
 
 ---
 
-### **C# 14.0 (Preview)**
+### **C# 14.0 Preview (релиз ожидается в конце 2025)**
 - **Основные нововведения**:
   - Члены расширения
   - Условное присваивание null
