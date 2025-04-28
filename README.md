@@ -956,7 +956,6 @@ public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
   - Модификаторы простых лямбда-параметров
   - `field` поддерживаемые свойства
   - `partial` события и конструкторы
-
 - **Версия .NET**: .NET 10.0.
 - **Версия Visual Studio**: Visual Studio 2022.
 
