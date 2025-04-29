@@ -944,13 +944,13 @@ public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
 
 ### **C# 14.0 Preview (релиз ожидается в конце 2025)**
 - **Основные нововведения**:
-  - Члены расширения
-  - Условное присваивание null
-  - `nameof` поддерживает несвязанные универсальные типы
-  - Более неявные преобразования для `Span<T>` и `ReadOnlySpan<T>`
-  - Модификаторы простых лямбда-параметров
-  - `field` поддерживаемые свойства
-  - `partial` события и конструкторы
+  - Члены расширения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#extension-members)
+  - Условное присваивание `null`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#extension-members)
+  - `nameof` поддерживает несвязанные универсальные типы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#extension-members)
+  - Более неявные преобразования для `Span<T>` и `ReadOnlySpan<T>`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#implicit-span-conversions)
+  - Модификаторы простых лямбда-параметров: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#simple-lambda-parameters-with-modifiers)
+  - `field` поддерживаемые свойства: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#the-field-keyword)
+  - `partial` события и конструкторы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#more-partial-members)
 - **Версия .NET**: .NET 10.0.
 - **Версия Visual Studio**: Visual Studio 2022.
 
