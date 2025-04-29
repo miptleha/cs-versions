@@ -933,7 +933,7 @@ public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
   - Частичные свойства и индексаторы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/partial-member)
   - `ref` и `unsafe` в итераторах и `async` методах: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#ref-and-unsafe-in-iterators-and-async-methods)
   - Реализация интерфейсов в `ref struct`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#ref-struct-interfaces)
-  - Приоритет разрешения перегрузки: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13#overload-resolution-priority)
+  - Приоритет разрешения перегрузки: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/attributes/general#overloadresolutionpriority-attribute)
   - Анти-ограничение параметра типа `allows ref struct`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters#allows-ref-struct) 
 - **Версия .NET**: .NET 9.0.
 - **Версия Visual Studio**: Visual Studio 2022 (17.12+).
