@@ -1013,7 +1013,7 @@ class Program
     }
 }
 ```
-</summary>
+</details>
 
 ---
 
