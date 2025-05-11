@@ -940,6 +940,81 @@ public class IntContainer(ReadOnlySpan<int> items): IEnumerable<int>
 
 [подробнее с примерами](https://metanit.com/sharp/tutorial/23.3.php), [на сайте микрософт](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-13)
 
+<details><summary>Пример кода C# 13.0</summary>
+
+```csharp
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    partial class ExtendableArray<T>
+    {
+        int _count;
+        T[] _data;
+
+        public ExtendableArray(int capacity = 0) => _data = new T[_count = capacity];
+
+        [OverloadResolutionPriority(1)]
+        public partial T this[Index i] { get; set; }
+        public T this[int i] => _data[i];
+
+        public override string ToString() => $"[{string.Join(", ", new ArraySegment<T>(_data, 0, _count))}]";
+    }
+
+    partial class ExtendableArray<T>
+    {
+
+        public partial T this[Index i]
+        {
+            get
+            {
+                CheckSize(i.GetOffset(_data.Length) + 1);
+                return _data[i];
+            }
+            set
+            {
+                CheckSize(i.GetOffset(_data.Length) + 1);
+                _data[i] = value;
+            }
+        }
+
+        private void CheckSize(int size)
+        {
+            _count = Math.Max(_count, size);
+            
+            bool skip = _data.Length >= size;
+            string start = skip ? "\e[32m" : "\e[31m";
+            string end = "\e[0m";
+            Console.WriteLine($"CheckSize {size}, skip={start}{skip}{end}");
+            if (skip)
+                return;
+            
+            int capacity = _data.Length == 0 ? 1 : _data.Length;
+            while (capacity < size)
+                capacity *= 2;
+
+            var data = _data;
+            _data = new T[capacity];
+            data.CopyTo(_data, 0);
+        }
+    }
+
+    public static void Main()
+    {
+        var list = new ExtendableArray<int>(3)
+        {
+            [0] = 1,
+            [^1] = 2
+        };
+        list[3] = 3;
+        list[4] = 1 + list[3];
+        Console.WriteLine(list);
+    }
+}
+```
+</summary>
+
 ---
 
 ### **C# 14.0 Preview (релиз ожидается в конце 2025)**
