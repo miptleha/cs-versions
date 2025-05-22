@@ -435,7 +435,7 @@ public static class ConsoleApplication
 ### **C# 6.0 (июль 2015)**
 - **Основные нововведения**:
   - Инициализаторы свойств: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties#property-initializers)
-  - Лямбда-выражения (`=>`) для определения метода: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions)
+  - Лямбда-выражения (`=>`) для методов и свойств: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition)
   - Интерполяция строк (`$""`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/tokens/interpolated)
   - Оператор `nameof`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/nameof)
   - Фильтры исключений (`when`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/when)
