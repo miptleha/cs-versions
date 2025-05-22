@@ -514,7 +514,7 @@ public class Program
 - **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017.
 
-[подробнее с примерами](https://itvdn.com/ru/blog/article/csharp7)
+[подробнее с примерами](https://itvdn.com/ru/blog/article/csharp7), [серия статей](https://andrey.moveax.ru/?tag=C%23+7&page=2)
 
 <details><summary>Пример кода C# 7.0</summary>
 
