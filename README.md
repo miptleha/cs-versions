@@ -440,6 +440,7 @@ public static class ConsoleApplication
   - Оператор `nameof`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/nameof)
   - Фильтры исключений (`when`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/when)
   - Null-условный оператор (`?.`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)
+  - Статические импорты (`using static`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-static-modifier)
 - **Версия .NET**: .NET Framework 4.6, .NET Core 1.0.
 - **Версия Visual Studio**: Visual Studio 2015.
 
