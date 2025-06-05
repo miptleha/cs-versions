@@ -511,6 +511,7 @@ public class Program
   - Больше возвращаемых типов в асинхронных методах: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/asynchronous-programming/async-return-types)
   - Лямбда-выражения для остальных частей класса: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members)
   - `throw` выражения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/exception-handling-statements#the-throw-expression)
+  - Отбрасываемые переменные (`_`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/discards)
 - **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017.
 
