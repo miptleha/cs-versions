@@ -690,7 +690,7 @@ public class Example
 - **Основные нововведения**:
   - Nullable ссылочные типы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/nullable-references)
   - Асинхронные потоки (`await foreach`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/iteration-statements#await-foreach)
-  - Асинхронно освобождаемые объекты (`await using`): [документация](https://learn.microsoft.com/ru-ru/dotnet/standard/garbage-collection/implementing-disposeasync)
+  - Асинхронно освобождаемые объекты (`await using`): [документация](https://learn.microsoft.com/ru-ru/dotnet/standard/garbage-collection/implementing-disposeasync#using-async-disposable)
   - Индексы и диапазоны: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/tutorials/ranges-indexes)
   - Реализация по умолчанию в интерфейсах: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)
   - Выражение `switch`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/switch-expression)
