@@ -695,7 +695,7 @@ public class Example
   - Реализация по умолчанию в интерфейсах: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/interface)
   - Выражение `switch`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/switch-expression)
   - Улучшенное сопоставление шаблонов: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns)
-  - Декларации `using`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-8.0/using)
+  - Декларации `using`: [документация](https://learn.microsoft.com/ru-ru/dotnet/standard/garbage-collection/using-objects)
   - Статические локальные функции: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/static)
   - `readonly` члены в структурах: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct#readonly-instance-members)
   - Присваивание при значении `null`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/null-coalescing-operator)
