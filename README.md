@@ -692,7 +692,7 @@ public class Example
   - Асинхронные потоки (`await foreach`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/iteration-statements#await-foreach)
   - Асинхронно освобождаемые объекты (`await using`): [документация](https://learn.microsoft.com/ru-ru/dotnet/standard/garbage-collection/implementing-disposeasync#using-async-disposable)
   - Индексы и диапазоны: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/tutorials/ranges-indexes)
-  - Реализация по умолчанию в интерфейсах: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)
+  - Реализация по умолчанию в интерфейсах: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/interface)
   - Выражение `switch`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/switch-expression)
   - Улучшенное сопоставление шаблонов: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns)
   - Декларации `using`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-8.0/using)
