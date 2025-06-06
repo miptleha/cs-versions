@@ -760,7 +760,7 @@ internal class Program
 - **Версия .NET**: .NET 5.0.
 - **Версия Visual Studio**: Visual Studio 2019 (16.8+).
 
-подробнее с примерами: [часть 1](https://andrey.moveax.ru/post/csharp-features-v9-0-top-level-statement), [часть 2](https://andrey.moveax.ru/post/csharp-features-v9-0-pattern-matching), [часть 3](https://andrey.moveax.ru/post/csharp-features-v9-0-records-basics), [часть 4](https://andrey.moveax.ru/post/csharp-features-v9-0-records-advanced), [часть 5](https://andrey.moveax.ru/post/csharp-features-v9-0-init-only-setter).
+подробнее с примерами: [серия статей](https://andrey.moveax.ru/?tag=C%23+9)
 
 <details><summary>Пример кода C# 9.0</summary>
 
