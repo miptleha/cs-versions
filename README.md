@@ -754,7 +754,7 @@ internal class Program
 - **Основные нововведения**:
   - Операторы верхнего уровня: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/program-structure/top-level-statements)
   - Записи (Records): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/record)
-  - Инициализаторы только для чтения (`init`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
+  - Инициализаторы только для чтения (`init`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers#object-initializers-with-the-init-accessor)
   - Выражения `with` для записей: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/with-expression)
   - Сопоставление с образцом для логических выражений: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-9.0/patterns3)
 - **Версия .NET**: .NET 5.0.
