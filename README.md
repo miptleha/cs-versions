@@ -796,14 +796,15 @@ record Post (int id, int userId, string title)
 
 ### **C# 10.0 (ноябрь 2021)**
 - **Основные нововведения**:
-  - Улучшенные структуры: инициализация свойств и полей, конструктор без параметров, `with`
+  - Улучшенные структуры - инициализация свойств и полей, конструктор без параметров, `with`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct#struct-initialization-and-default-values)
   - Структуры записей (`record struct`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/record)
   - Глобальные `using`-директивы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-global-modifier)
+  - Неявные `using`-директивы: [документация](https://learn.microsoft.com/ru-ru/dotnet/core/project-sdk/overview#implicit-using-directives)
   - Упрощенное объявление пространств имен: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/namespace#using-statements-in-file-scoped-namespaces)
   - Расширенные шаблоны свойств: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns)
   - Естественный тип ламбда-выражения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions#explicit-return-type)
   - Явный возвращаемый тип лямбда-выражения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions#explicit-return-type)
-  - Константные интерполируемые строки
+  - Константные интерполируемые строки: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/tokens/interpolated)
 - **Версия .NET**: .NET 6.0.
 - **Версия Visual Studio**: Visual Studio 2022.
 
