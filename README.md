@@ -802,7 +802,7 @@ record Post (int id, int userId, string title)
   - Неявные `using`-директивы: [документация](https://learn.microsoft.com/ru-ru/dotnet/core/project-sdk/overview#implicit-using-directives)
   - Упрощенное объявление пространств имен: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/namespace#using-statements-in-file-scoped-namespaces)
   - Расширенные шаблоны свойств: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns)
-  - Естественный тип ламбда-выражения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions#explicit-return-type)
+  - Естественный тип ламбда-выражения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions#natural-type-of-a-lambda-expression)
   - Явный возвращаемый тип лямбда-выражения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-expressions#explicit-return-type)
   - Константные интерполируемые строки: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/tokens/interpolated)
 - **Версия .NET**: .NET 6.0.
