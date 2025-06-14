@@ -796,7 +796,7 @@ record Post (int id, int userId, string title)
 
 ### **C# 10.0 (ноябрь 2021)**
 - **Основные нововведения**:
-  - Улучшенные структуры - инициализация свойств и полей, конструктор без параметров, `with`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct#struct-initialization-and-default-values)
+  - Улучшенные структуры - инициализация свойств и полей, конструктор без параметров, `with`: [конструкторы](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/struct#struct-initialization-and-default-values), [with](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-10.0/record-structs#allow-with-expression-on-structs)
   - Структуры записей (`record struct`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/record)
   - Глобальные `using`-директивы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-global-modifier)
   - Неявные `using`-директивы: [документация](https://learn.microsoft.com/ru-ru/dotnet/core/project-sdk/overview#implicit-using-directives)
