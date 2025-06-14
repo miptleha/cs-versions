@@ -437,7 +437,7 @@ public static class ConsoleApplication
   - Инициализаторы свойств: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties#property-initializers)
   - Лямбда-выражения (`=>`) для методов и свойств: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/lambda-operator#expression-body-definition)
   - Интерполяция строк (`$""`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/tokens/interpolated)
-  - Оператор `nameof`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/nameof)
+  - Выражение `nameof`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/nameof)
   - Фильтры исключений (`when`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/when)
   - Null-условный оператор (`?.`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)
   - Статические импорты (`using static`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/using-directive#the-static-modifier)
