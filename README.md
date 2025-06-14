@@ -841,7 +841,7 @@ class Program
 - **Основные нововведения**:
   - Необработанные строковые литералы (`"""`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/strings/#raw-string-literals)
   - Модификатор `file` для типов: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/file)
-  - Обязательный модификатор `required`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/required)
+  - Обязательные члены (`required`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/required)
   - Универсальные атрибуты: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-11#generic-attributes)
   - Шаблоны списков: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/patterns#list-patterns)
   - Строковые литералы `UTF-8`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/reference-types#utf-8-string-literals)
