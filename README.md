@@ -1030,7 +1030,7 @@ class Program
 - **Основные нововведения**:
   - Члены расширения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#extension-members)
   - Условное присваивание `null`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#null-conditional-assignment)
-  - `nameof` поддерживает несвязанные универсальные типы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#extension-members)
+  - `nameof` поддерживает несвязанные универсальные типы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#unbound-generic-types-and-nameof)
   - Более неявные преобразования для `Span<T>` и `ReadOnlySpan<T>`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#implicit-span-conversions)
   - Модификаторы простых лямбда-параметров: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#simple-lambda-parameters-with-modifiers)
   - `field` поддерживаемые свойства: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#the-field-keyword)
