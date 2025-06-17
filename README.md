@@ -221,6 +221,7 @@ class Program
   - Статические классы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)
   - Итераторы (`yield`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/iterators)
   - Nullable типы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+  - Частичные классы и интерфейсы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
   - Ковариация и контравариация в делегатах: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)
 - **Версия .NET**: .NET Framework 2.0.
 - **Версия Visual Studio**: Visual Studio 2005.
@@ -284,6 +285,7 @@ namespace CSharp_2
   - Методы расширения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
   - Автоматические свойства: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)
   - Инициализаторы объектов и коллекций: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)
+  - Частичные методы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods#partial-members)
 - **Версия .NET**: .NET Framework 3.5.
 - **Версия Visual Studio**: Visual Studio 2008.
 
@@ -512,6 +514,7 @@ public class Program
   - Лямбда-выражения для остальных частей класса: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members)
   - `throw` выражения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/statements/exception-handling-statements#the-throw-expression)
   - Отбрасываемые переменные (`_`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/functional/discards)
+  - Частичные структуры: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
 - **Версия .NET**: .NET Framework 4.7, .NET Core 2.0.
 - **Версия Visual Studio**: Visual Studio 2017.
 
@@ -757,6 +760,7 @@ internal class Program
   - Инициализаторы только для чтения (`init`): [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers#object-initializers-with-the-init-accessor)
   - Выражения `with` для записей: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/operators/with-expression)
   - Сопоставление с образцом для логических выражений: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-9.0/patterns3)
+  - Улучшенные частичные методы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/proposals/csharp-9.0/extending-partial-methods) 
 - **Версия .NET**: .NET 5.0.
 - **Версия Visual Studio**: Visual Studio 2019 (16.8+).
 
