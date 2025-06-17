@@ -1029,7 +1029,7 @@ class Program
 ### **C# 14.0 Preview (релиз ожидается в конце 2025)**
 - **Основные нововведения**:
   - Члены расширения: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#extension-members)
-  - Условное присваивание `null`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#extension-members)
+  - Условное присваивание `null`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#null-conditional-assignment)
   - `nameof` поддерживает несвязанные универсальные типы: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#extension-members)
   - Более неявные преобразования для `Span<T>` и `ReadOnlySpan<T>`: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#implicit-span-conversions)
   - Модификаторы простых лямбда-параметров: [документация](https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-14#simple-lambda-parameters-with-modifiers)
